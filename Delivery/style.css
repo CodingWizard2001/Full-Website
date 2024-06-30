@@ -79,6 +79,10 @@ header.shadow{
     box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
     transition: 0.2s;
 }
+/* Section */
+section{
+    padding: 80px 5%;
+}
 /* Home Section */
 .home{
     position: relative;
@@ -128,9 +132,11 @@ header.shadow{
 .first img{
     width: 60px;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 .first h5{
     font-size: var(--p-font);
+    margin-bottom: 1px;
 }
 .first p{
     font-size: 0.7rem;
@@ -170,4 +176,61 @@ header.shadow{
 }
 .parts .context-sec p{
     font-size: var(--p-font);
+}
+
+/* Service Section */
+.service{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.service .center{
+    text-align: center;
+    font-size: var(--h3-font);
+    font-weight: 600;
+}
+.service .others{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+.service .box{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #1c0b08;
+    border-radius: 10px;
+    transition: 0.6s ease-in;
+}
+.service .box:hover{
+    box-shadow: 0 2px 7px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.service .box img{
+    width: 110px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.service .box .heading{
+    font-size: var(--h5-font);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.service .box h5{
+    font-size: var(--p-font);
+    font-weight: 700;
+    text-align: center;
+}
+.service .box p{
+    font-size: var(--p-font);
+    width: 200px;
 }
