@@ -458,6 +458,9 @@ footer{
         --p-font: 0.8rem;
         --btn-font: 0.85rem;
     }
+    section{
+        padding: 0;
+    }
     .btn{
         transform: scale(1.15);
         padding: 8px 35px;
