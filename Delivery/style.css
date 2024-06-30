@@ -16,7 +16,8 @@
     --main-color: #FFBF00;
     --big-font: 2.6rem;
     --h3-font: 1.7rem;
-    --p-font: 1.1rem;
+    --h5-font: 1.1rem;
+    --p-font: 0.9rem;
     --btn-font: 0.95rem;
 }
 body{
@@ -49,7 +50,7 @@ header{
 .navBar a{
     padding: 10px 20px;
     color: var(--text-color);
-    font-size: var(--p-font);
+    font-size: var(--h5-font);
 }
 .navBar a:hover{
     color: var(--main-color);
@@ -70,6 +71,13 @@ header{
     color: var(--main-color);
     background: var(--bg-color);
     transform: scale(0.9);
+    font-weight: 700;
+}
+/* Scroll */
+header.shadow{
+    background: var(--bg-color);
+    box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
+    transition: 0.2s;
 }
 /* Home Section */
 .home{
@@ -102,17 +110,20 @@ header{
 /* Why Choose Us */
 .why-choose{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4,250px);
     align-items: center;
+    justify-content: center;
     text-align: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 .first{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.5s ease-in;
+    padding: 20px 50px;
 }
 .first img{
     width: 60px;
@@ -123,4 +134,40 @@ header{
 }
 .first p{
     font-size: 0.7rem;
+}
+
+/* About Section */
+.about{
+    display: grid;
+    grid-template-rows: repeat(2,20rem);
+    width: 100%;
+    align-items: center;
+}
+.parts{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 5%;
+}
+.parts .img-sec{
+    width: 80%;
+    height: auto;
+}
+.parts .img-sec img{
+    width: 100%;
+    height: auto;
+}
+.parts .context-sec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.parts .context-sec h3{
+    font-size: var(--h3-font);
+}
+.parts .context-sec p{
+    font-size: var(--p-font);
 }
