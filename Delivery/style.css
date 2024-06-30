@@ -552,9 +552,6 @@ footer{
         --p-font: 0.8rem;
         --btn-font: 0.85rem;
     }
-    .home .right-section img{
-        width: 250px;
-    }
     .contact .form-sec{
         width: 100%;
     }
