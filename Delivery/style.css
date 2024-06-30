@@ -110,15 +110,19 @@ section{
     margin: 5px 0 15px;
     font-size: var(--p-font);
 }
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .right-section img{
-    width: 80%;
-    height: auto;
+    width: 450px;
 }
 
 /* Why Choose Us */
 .why-choose{
     display: grid;
-    grid-template-columns: repeat(4,250px);
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -380,7 +384,7 @@ footer{
 /* Make It Responsive */
 @media (max-width:1080px) {
     :root{
-        --big-font: 2rem;
+        --big-font: 1.5rem;
         --h3-font: 1.3rem;
         --h5-font: 0.95rem;
         --p-font: 0.8rem;
@@ -388,7 +392,10 @@ footer{
     }
     #menu-icon{
         display: initial;
-        z-index: 150;
+        z-index: 180;
+    }
+    .over{
+        z-index: -1;
     }
     .navBar{
         position: absolute;
@@ -408,8 +415,144 @@ footer{
         padding: 12px;
     }
     .navBar.active{
-        clip-path: circle(164% at 60% 0);
+        clip-path: circle(184% at 60% 0);
     }
-
-    /* Home Section */
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 7rem;
+    }
+    .right-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-section img{
+        width: 300px;
+    }
+    .why-choose{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: 1;
+    }
+    .others{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-basis: 1;
+    }
+    .btn-sec .btn i{
+        font-size: 0.8rem;
+    }
+}
+/* Tab Design */
+@media (max-width:768px) {
+    :root{
+        --big-font: 1.8rem;
+        --h3-font: 1.3rem;
+        --h5-font: 0.95rem;
+        --p-font: 0.8rem;
+        --btn-font: 0.85rem;
+    }
+    .btn{
+        transform: scale(1.15);
+        padding: 8px 35px;
+    }
+    .over{
+        transform: scale(0.95);
+    }
+    .home,
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .home{
+        gap: 0;
+        margin-top: 3rem;
+    }
+    .right-section img{
+        width: 350px;
+    }
+    .why-choose{
+        margin-top: 5rem;
+    }
+    .about{
+        grid-template-rows: repeat(2,650px);
+    }
+    .about .parts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .parts:nth-child(2){
+        flex-direction: column-reverse;
+        margin-top: -5rem;
+    }
+    .about .parts .img-sec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .parts .img-sec img{
+        width: 350px;
+    }
+    .download{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .download .left-part img{
+        width: 300px;
+    }
+    .btn-sec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: var(--h5-font);
+    }
+    .contact .form-sec{
+        width: 80%;
+    }
+    .contact .img-sec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .img-sec img{
+        width: 300px;
+    }
+    .form-sec .btn{
+        padding: 8px 30px;
+    }
+    .footer-box{
+        font-size: var(--p-font);
+    }
+}
+@media (max-width:450px) {
+    :root{
+        --big-font: 1.5rem;
+        --h3-font: 1.1rem;
+        --h5-font: 0.95rem;
+        --p-font: 0.8rem;
+        --btn-font: 0.85rem;
+    }
+    .home .right-section img{
+        width: 250px;
+    }
+    .contact .form-sec{
+        width: 100%;
+    }
 }
