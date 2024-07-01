@@ -135,6 +135,7 @@ section{
     visibility: hidden;
     opacity: 0;
     font-size: var(--h5-font);
+    z-index: 1000;
 }
 .scroll-to-top.up{
     opacity: 1;
@@ -507,8 +508,6 @@ footer{
         width: 350px;
     }
     .scroll-to-top {
-        right: 10px;
-        bottom: 10px;
         transform: scale(0.9);
     }
     .why-choose{
