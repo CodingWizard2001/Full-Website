@@ -16,7 +16,7 @@
     --main-color: #FFBF00;
     --big-font: 2.6rem;
     --h3-font: 1.7rem;
-    --h5-font: 1.1rem;
+    --h5-font: 1.3rem;
     --p-font: 0.9rem;
     --btn-font: 0.95rem;
 }
@@ -119,6 +119,27 @@ section{
     width: 450px;
 }
 
+/* scroll Up Button */
+.scroll-to-top {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    background-color: #FFBF00;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    font-size: var(--h5-font);
+}
+.scroll-to-top.up{
+    opacity: 1;
+    visibility: visible;
+}
 /* Why Choose Us */
 .why-choose{
     display: grid;
@@ -451,6 +472,9 @@ footer{
 }
 /* Tab Design */
 @media (max-width:768px) {
+    *{
+        width: auto;
+    }
     :root{
         --big-font: 1.8rem;
         --h3-font: 1.3rem;
@@ -481,6 +505,11 @@ footer{
     }
     .right-section img{
         width: 350px;
+    }
+    .scroll-to-top {
+        right: 10px;
+        bottom: 10px;
+        transform: scale(0.9);
     }
     .why-choose{
         margin-top: 5rem;

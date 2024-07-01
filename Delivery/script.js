@@ -4,6 +4,18 @@ window.addEventListener('scroll',()=>{
     header.classList.toggle('shadow',window.scrollY > 0);
 });
 
+// Scroll Up Button
+let scrollUp = document.querySelector('.scroll-to-top');
+window.addEventListener('scroll',()=>{
+    scrollUp.classList.toggle('up',window.scrollY > 100);
+});
+function ScrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+}
+
 // Hamburger Menu
 let menu = document.querySelector('#menu-icon');
 let navBar = document.querySelector('.navBar');
@@ -28,6 +40,7 @@ const sr = ScrollReveal({
 sr.reveal('.left-section',{origin:'left'})
 sr.reveal('.right-section',{origin:'right'})
 sr.reveal('.first img',{origin:'right'})
+sr.reveal('.scroll-to-top',{origin:'right'})
 sr.reveal('.first h5',{origin:'left'})
 sr.reveal('.first p',{origin:'left'})
 sr.reveal('.img-sec',{origin:'bottom'})
