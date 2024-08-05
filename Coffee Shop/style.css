@@ -36,7 +36,7 @@ header{
     transition: all .40s ease;
 }
 header.shadow{ /* For Scroll */
-    background: rgba(46, 45, 45, 0.4);
+    background: rgba(72, 71, 71, 0.4);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(31, 30, 30, 0.01);
     backdrop-filter: blur(5px);
@@ -80,11 +80,13 @@ header.shadow{ /* For Scroll */
     cursor: pointer;
     color: var(--bg-color);
     font-size: 22px;
+    transition: .4s ease;
 }
 .navBar a:hover{
     color: #d59546;
 }
 .icons a:hover{
+    transform: scale(0.7);
     color: #BC9667;
 }
 #menu-icon{
@@ -96,6 +98,7 @@ header.shadow{ /* For Scroll */
     transform: translateY(-2px);
     color: var(--bg-color);
 }
+
 /* Button */
 .btn{
     width: 180px;
@@ -119,7 +122,7 @@ header.shadow{ /* For Scroll */
 
 /* Section */
 section{
-    padding: 50px 8%;
+    padding: 145px 8%;
 }
 
 /* Home Section */
@@ -152,6 +155,22 @@ section{
 .home .img-content img{
     width: 450px;
 }
+.home .btn{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: var(--p-font);
+    color: var(--bg-color);
+    background: var(--second-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+.home .btn:hover{
+    transform: scale(0.9);
+}
 
 /* Why Choose Us */
 .whyChoose{
@@ -183,13 +202,131 @@ section{
     gap: 50px;
 }
 .aboutus .img-content img{
-    width: 400px;
+    width: 425px;
 }
 .aboutus .text-content h2{
     font-size: var(--h2-font);
     color: #BC9667;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .aboutus .text-content p{
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+/* Popular */
+.popular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+}
+.popular h2{
+    font-size: var(--h4-font);
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.rows{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+    align-items: center;
+}
+.cart{
+    width: 250px;
+    height: 330px;
+    position: relative;
+    padding: 10px;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.img-gallery{
+    width: 100%;
+    height: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3F3F3;
+}
+.img-gallery .bx-heart{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background:var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+.img-gallery .bx-share-alt{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background:var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+.img-gallery i:hover{
+    transform: scale(0.8);
+}
+.img-gallery img{
+    width: 150px;
+    transition: 0.4s ease-in;
+}
+.cart h4{
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+.text-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.text-gallery .rupee{
+    padding-inline: 15px;
+    cursor: pointer;
+    color: var(--bg-color);
+    background: #BC9667;
+    outline: none;
+    border: none;
+}
+.text-gallery .AddCart{
+    padding-inline: 15px;
+    cursor: pointer;
+    color: var(--bg-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+    border: 1px solid #BC9667;
+}
+.cart:hover .img-gallery img{
+    transform: scale(1.15);
+}
+.all{
+    padding: 8px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--bg-color);
+    background: var(--second-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.5s ease-in;
+}
+.all:hover{
+    transform: scale(0.95);
 }
