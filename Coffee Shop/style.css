@@ -149,7 +149,7 @@ section{
 /* Home Section */
 .home{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url(img/bg.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -522,12 +522,12 @@ footer{
 }
 
 /* Small Sized Laptop */
-@media screen and (max-width : 915px) {
+@media screen and (max-width : 938px) {
     .logo h2{
         font-size: 20px;
     }
     section{
-        padding: 100px 6%;
+        padding: 50px 6%;
     }
     #menu-icon{
         display: initial;
@@ -563,7 +563,7 @@ footer{
         font-size: 25px;
     }
     .home .img-content img{
-        width: 290px;
+        width: 250px;
     }
     .whyChoose .col1 h4{
         font-size: 18px;
