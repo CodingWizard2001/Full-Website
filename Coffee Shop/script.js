@@ -63,17 +63,10 @@ sr.reveal('.aboutus .text-content',{origin:'right',delay: 600,interval: 250})
 
 // Popular
 sr.reveal('.popular h2',{origin:'bottom'})
-sr.reveal('.popular .rows .cart',{origin:'left',delay:400,interval: 300})
-
-// contact
-sr.reveal('.contactus h2',{origin:'bottom',delay:400,interval: 300})
-sr.reveal('.contactus .email-section',{origin:'right',delay:400,interval: 300})
+sr.reveal('.popular .rows .cart',{origin:'left',delay:100,interval: 300})
 
 // Footer
 sr.reveal('.footer-logo',{origin:'bottom',delay:400})
 sr.reveal('.footer-box',{origin:'bottom',delay:400,interval : 500})
 sr.reveal('.social',{origin:'top',delay:400,interval : 500})
 
-// Copyright
-sr.reveal('.line',{origin:'bottom',delay:700})
-sr.reveal('.copyright',{origin:'bottom',delay:400})
